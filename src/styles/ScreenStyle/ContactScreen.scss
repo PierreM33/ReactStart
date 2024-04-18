@@ -1,0 +1,119 @@
+
+.ContactContainer {
+    display: flex;
+    flex: 1;
+    //flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ContainerMiddle {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    //background-color: orange;
+}
+
+.ContainerText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ContactTitle {
+    color: var(--whitePrimary);
+    font-size: 1.5rem;
+    margin: 15px 25px;
+    cursor: pointer;
+}
+.ContactTitle:hover {
+    color: var(--bluePrimary);
+    font-size: 1.5rem;
+    margin: 15px 25px;
+    cursor: pointer;
+}
+
+.ContactForm {
+    display: flex;
+    flex-direction: column;
+    //align-items: center;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+//.inputGroup
+#name {
+    margin-right: 20px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    color: var(--whitePrimary);
+}
+
+.object {
+    background-color: var(--blackInput);
+    width: 620px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 15px 15px;
+    border: none;
+    color: var(--whitePrimary);
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 300px;
+    padding: 15px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--blackInput);
+    color: var(--whitePrimary);
+}
+
+textarea {
+    width: 620px;
+    min-height: 300px;
+    padding: 15px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--blackInput);
+    color: var(--whitePrimary);
+    resize: none;
+}
+
+textarea:focus,
+.object:focus,
+input[type="text"],
+input[type="email"]{
+    outline: none;
+}
+
+.submitButton {
+    background-color: var(--blackInput);
+    color: #fff;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.submitButton:hover {
+    background-color: var(--whitePrimary);
+    color: var(--blackPrimary);
+    font-weight: bold;
+}
